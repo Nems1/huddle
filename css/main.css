@@ -1,0 +1,238 @@
+/* Global resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;;
+}
+
+/* Custom setting */
+
+:root {
+ 
+/*  Primary colors */
+
+   --bright-orange: hsl(31, 77%, 52%);
+   --light-cyan: hsl(184, 100%, 96%);
+   --dark-cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+
+/* Neutral colors */
+   
+    --white /*(paragraphs) */: hsla(0, 0%, 100%, 0.75);
+    --very-dark-gray /*(background, headings, buttons) */: hsl(0, 0%, 95%);
+
+ /*  Typography */
+
+    --font-size: 15px;
+    --font-family-lexend: 'Lexend Deca', sans-serif;
+    --font-family-big-shoulders: 'Big Shoulders Display', cursive;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+    background: var(--dark-grey);
+}
+
+.pg-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+    background: var(--light-cyan);
+    background-image: url('/images/bg-hero-desktop.svg');
+}
+
+.header-item {
+    width: calc(100% - 10rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 2.5rem;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    padding-block: .6rem;
+    padding-inline: 2rem;
+    border-radius: 2rem;
+    background: var(--white);
+    color: #000;
+}
+
+/* Build Section */
+
+.build-comm {
+    width: calc(100% - 5rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block-end: 3rem;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.build-header,
+.build-comm p {
+    padding-inline-end: 6.8265rem;
+}
+
+.build-header {
+    font-family: var(--font-family-lexend);
+    font-size: xx-large;
+}
+
+.left a {
+    color: var(--white);
+    text-decoration: none;
+    background: hotpink;
+    padding-inline: 2rem;
+    padding-block: .6rem;
+    border-radius: 1rem;
+}
+
+/* Main Section */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+/*    position: relative; */
+    margin-block-start: 5rem;
+}
+
+.main-header {
+    font-family: var(--font-family-lexend);
+    font-size:x-large;
+}
+
+/* Grow together section */
+
+.grow-item,
+.flow-items,
+.users-items {
+    width: calc(100% - 5rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 4rem;
+    border: 1px solid var(--very-dark-gray);
+    border-radius: .1rem;
+}
+
+.main-header,
+.right,
+.items p {
+    
+    padding-inline: 6rem 2rem;
+}
+
+.flow-items .left,.flow-items .right {
+    padding-inline: 2rem ;
+}
+
+ img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+.get-started {
+    font-size: x-large;
+    font-family: var(--font-family-lexend);
+    align-self: center;
+    text-align: center;
+    border: 1px solid var(--very-dark-gray);
+    z-index: -999;
+}
+
+.span-get-started {
+    color: var(--white);
+    background: hotpink;
+    font-size: var(--font-size);
+    border-radius: 1rem;
+    padding-block: .6rem;
+    padding-inline: 2rem;
+}
+
+/* Footer Section */
+
+.pg-footer {
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    padding-block-start: 2rem;
+    padding-inline: 4rem;
+    flex-direction: column;
+    gap: 1rem;
+    bottom: 0;
+    color: var(--white);
+    background: var(--very-dark-cyan);
+}
+
+.footer-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.address,
+.footer-items p {
+    padding-block: .6rem;
+}
+.footer-items a {
+    text-decoration: none;
+    align-items: center;
+    color: var(--white);
+}
+.span-address {
+    
+    text-align: left;
+    padding-inline-start: 1rem;
+    
+}
+
+.footer-logo {
+    color: #fff;
+}
+
+.footer-items-address,
+.social-menu{
+    width: 25%;
+}
+.social-menu {
+    display: flex;
+    flex-direction: row;
+}
+.social-menu li {
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+.social-menu i {
+    color: var(--white);
+    background: var(--very-dark-cyan);
+    border-radius: 50%;
+}
+.copy-right {
+    margin-block-end: 2rem;
+    align-self: flex-end;
+    padding-block-end: 1rem;
+}

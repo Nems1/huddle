@@ -1,0 +1,139 @@
+/* Global resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;;
+}
+
+/* Custom setting */
+
+:root {
+ 
+/*  Primary colors */
+
+   --bright-orange: hsl(31, 77%, 52%);
+   --dark-cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+
+/* Neutral colors */
+   
+    --white /*(paragraphs) */: hsla(0, 0%, 100%, 0.75);
+    --very-dark-gray /*(background, headings, buttons) */: hsl(0, 0%, 95%);
+
+ /*  Typography */
+
+    --font-size: 15px;
+    --font-family-lexend: 'Lexend Deca', sans-serif;
+    --font-family-big-shoulders: 'Big Shoulders Display', cursive;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+    background: var(--dark-grey);
+    background: url('/images/bg-hero-desktop.svg');
+}
+
+.pg-header {
+    width: calc(100% - 5rem);
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 4rem 0;
+    padding-inline: 2rem;
+    height: 4rem;
+}
+.nav a {
+    text-decoration: none;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    border-radius: 2rem;
+    background: var(--white);
+    color: #000;
+}
+/* Main Section of styles.css */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    margin-block-start: 5rem;
+}
+.build-comm {
+    width: calc(100% - 5rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+}
+.build-comm .left,
+.build-comm .right {
+    width: 50%;
+}
+.build-header,
+.build-comm p {
+    padding-inline-end: 6.8265rem;
+}
+
+.build-header {
+    font-family: var(--font-family-lexend);
+    font-size: xx-large;
+}
+
+.build-comm .left a {
+    color: var(--white);
+    text-decoration: none;
+    background: hotpink;
+    padding-inline: 2rem;
+    padding-block: .6rem;
+    border-radius: 1rem;
+}
+.build-comm .right img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+/* Grow together section */
+
+.grow-item {
+    width: calc(100% - 5rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 4rem;
+    border: 1px solid red;
+    background: var(--dark-grey);
+}
+
+.grow-item .left,
+.grow-item .right {
+        width: 50%;
+}
+
+.grow-item img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+/* Footer Section */
+
+.pg-footer {
+    display: none;
+    width: 100%;
+    padding-inline: 5rem;
+    bottom: 0;
+    margin-block-start: auto;
+    position: absolute;
+    background: var(--very-dark-cyan);
+}
