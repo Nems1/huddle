@@ -162,11 +162,11 @@ body {
     
     background: var(--very-dark-gray);
     border-radius: .4rem;
-    width: 25rem;
+    width: 35rem;
     height: 10rem;
     margin-block-start: 2rem;
     padding-block-start: 4rem;
-    font-size: large;
+    font-size: x-large;
     font-family: var(--font-family-lexend);
     border: 1px solid var(--dark-gray);
     z-index: 2;
