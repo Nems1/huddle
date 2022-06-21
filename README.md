@@ -15,6 +15,6 @@ There could be some issue when viewed smaller devices with resolutions lower tha
 Visit [Live site](https://nems1.github.io/huddle/index.html)
 View [source code](https://github.com/Nems1/huddle)
 
-$$ Courtesy
+## Courtesy
 
 This project was possible with the help of @thezuriteam and @ingressive4good who provided the resources and assets.
