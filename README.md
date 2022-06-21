@@ -17,4 +17,4 @@ View [source code](https://github.com/Nems1/huddle)
 
 $$ Courtesy
 
-This project possible with the help @thezuriteam and @ingressive4good who provided the resources and assets.
+This project was possible with the help of @thezuriteam and @ingressive4good who provided the resources and assets.
